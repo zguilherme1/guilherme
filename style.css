@@ -11,9 +11,9 @@ html {
 
 :root {
     --primaria: white;
-    --secundaria: rgb(70, 69, 69);
-    --escuro: rgb(0, 0, 0);
-    --vidro: rgb(126, 124, 124);
+    --secundaria: rgba(70, 69, 69);
+    --escuro: rgba(0, 0, 0);
+    --vidro: rgba(126, 124, 124);
 }
 
 body {
@@ -50,7 +50,7 @@ body {
 
 .menu-link {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255);
     font-weight: 500;
     position: relative;
     padding: 5px 0;
@@ -105,12 +105,9 @@ body {
     font-size: 1.4rem;
     color: var(--vidro);
     margin: 8px;
-    position: left ;
-    align-items: left;
-
 }
 
-.Sobre{
+.sobre{
     padding: 2rem 2rem;
 }
 
@@ -164,48 +161,40 @@ body {
     text-align: center;
 }
 
-.formulario-contato{
+    .btn-contato button:hover{
+        box-shadow: 0px 0px 8px rgba(gray);
+        transform: scale(1.05);
+    }
+    
+   .box-redes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.icone-rede-box {
     animation: flutuar 2s infinite ease-in-out;
-    max-width: 600px;
-    margin: 0 auto;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter:blur(5px);
-    padding: 2rem;
-    border: 1px solid var(--vidro);
-    border-radius: 16px;
-    }
-    
-    .grupo-form{
-    margin-bottom: 1.5rem;
-    }
-    .campo-form{
-    width: 100%;
-    padding: 1rem;
-    background: rgb(255, 255, 255);
-    border-radius: 8px;
-    color:  var(--secundaria);
-    }
-    
-    .campo-textarea {
-        width: 100%;
-    padding: 1rem;
-    background: rgb(255, 255, 255);
-    border-radius: 8px;
-    color:  var(--secundaria);
-    }
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--vidro);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-    .botao-form{
-        color: var(black);
-        background: linear-gradient(45deg,--escuro);
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: bold;
-        width: 100%;
-        transition: all 0.5 ease;
+.icone-rede-box:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
 
-    }
-    .botao-form:hover{
-        transform: translateY(-4px);
-    }
+.icone-rede-box img {
+  width: 60px;
+  height: 60px;
+}
+
+      
